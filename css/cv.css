@@ -1,0 +1,261 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body{
+  font-family:'Montserrat', sans-serif;
+  background:#ffffff;
+  color:#222;
+  max-width:1200px;
+  margin:auto;
+  padding:40px 70px;
+  line-height:1.45;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.main-name{
+  font-size:64px;
+  font-weight:800;
+  color:#000;
+  letter-spacing:-1px;
+  margin-bottom:0;
+}
+
+.degree{
+  font-size:26px;
+  font-weight:700;
+  color:#222;
+  margin-top:-5px;
+  margin-bottom:16px;
+}
+
+.divider{
+  width:100%;
+  height:2px;
+  background:#d7dde3;
+  margin-bottom:18px;
+}
+
+.contact{
+  font-size:20px;
+  font-weight:500;
+  color:#333;
+}
+
+/* =========================================================
+   SECTION TITLES
+========================================================= */
+
+.section{
+  margin-top:28px;
+}
+
+.section-title{
+  background:#d7dde3;
+  padding:11px 16px;
+  font-size:22px;
+  font-weight:800;
+  color:#000;
+  text-transform:uppercase;
+  margin-bottom:24px;
+}
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.education-item{
+  margin-bottom:18px;
+}
+
+.education-item p{
+  font-size:22px;
+  color:#666;
+  font-weight:500;
+}
+
+.education-item strong{
+  color:#111;
+  font-weight:800;
+}
+
+.subtext{
+  margin-left:14px;
+  margin-top:2px;
+}
+
+/* =========================================================
+   JOBS
+========================================================= */
+
+.job{
+  margin-bottom:42px;
+}
+
+.job-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:20px;
+}
+
+.job-left{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+}
+
+.job-title{
+  font-size:22px;
+  font-weight:800;
+  color:#111;
+  white-space:nowrap;
+}
+
+.job-company{
+  font-size:22px;
+  font-weight:500;
+  color:#666;
+  line-height:1.35;
+}
+
+.location{
+  color:#666;
+  font-weight:500;
+}
+
+.job-date{
+  font-size:18px;
+  font-weight:700;
+  color:#222;
+  white-space:nowrap;
+}
+
+/* =========================================================
+   BULLETS
+========================================================= */
+
+.details{
+  margin-top:16px;
+  margin-left:42px;
+}
+
+.details li{
+  font-size:18px;
+  font-weight:500;
+  color:#222;
+  margin-bottom:10px;
+  line-height:1.55;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:900px){
+
+  body{
+    padding:25px;
+  }
+
+  .main-name{
+    font-size:42px;
+  }
+
+  .degree{
+    font-size:22px;
+  }
+
+  .contact{
+    font-size:15px;
+  }
+
+  .section-title{
+    font-size:18px;
+  }
+
+  .education-item p,
+  .job-title,
+  .job-company{
+    font-size:18px;
+  }
+
+  .details li{
+    font-size:15px;
+  }
+
+  .job-top{
+    flex-direction:column;
+  }
+
+  .job-left{
+    flex-direction:column;
+    gap:2px;
+  }
+
+  .job-date{
+    margin-top:6px;
+  }
+  .interests{
+  font-size:18px;
+  font-weight:500;
+  color:#222;
+  line-height:1.55;
+
+  padding-left:38px;
+  position:relative;
+}
+
+/* custom bullet */
+.interests::before{
+  content:"•";
+  position:absolute;
+  left:12px;
+  top:0;
+  font-size:28px;
+  line-height:1;
+}
+/* =========================================================
+   SIMPLE LISTS
+========================================================= */
+
+.simple-list{
+  margin-top:10px;
+  padding-left:38px;   /* controls bullet indentation */
+}
+
+.simple-list li{
+  font-size:18px;
+  font-weight:500;
+  color:#222;
+  margin-bottom:8px;
+  line-height:1.45;
+
+  padding-left:10px;   /* spacing between bullet and text */
+}
+
+/* bold first text before "|" if desired */
+.simple-list li strong{
+  font-weight:800;
+  color:#111;
+}
+
+}
